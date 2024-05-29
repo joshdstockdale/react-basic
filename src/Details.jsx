@@ -17,9 +17,8 @@ const Details = () => {
     );
   }
   if (error) {
-    return `Error: ${error.message}`;
+    return <h2>Error: {error.message}</h2>;
   }
-  console.log(data);
   const pet = data.pets[0];
   return (
     <div className="details">
